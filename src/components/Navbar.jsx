@@ -29,7 +29,7 @@ const AmazonNavbar = ({ deliveryLocation = "India" }) => {
       {/* Left Section */}
       <div className="flex items-center ">
         <img
-          src="../src/assets/logo-amazon.png"
+          src="../public/logo-amazon.png"
           alt="Amazon"
           className="h-15 w-auto border border-transparent hover:border-white hover:font-bold px-2 py-1 rounded"
         />
