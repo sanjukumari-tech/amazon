@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar.jsx";
 import { FaShoppingCart } from "react-icons/fa";
 import {  useState } from "react";
 import User from "./User.jsx";
+import amazonLogo from "../assets/logo-amazon.png"
 
 
 const data =[
@@ -25,11 +26,12 @@ const AmazonNavbar = ({ deliveryLocation = "India" }) => {
   };
 
   return (
-    <nav className="bg-[#131921] text-white px-4 py-2 flex flex-wrap items-center justify-between">
+   <nav className="bg-[#131921] text-white px-4 py-2 flex flex-wrap items-center justify-between md:flex-nowrap">
+
       {/* Left Section */}
       <div className="flex items-center ">
         <img
-          src="../public/logo-amazon.png"
+          src={amazonLogo}
           alt="Amazon"
           className="h-15 w-auto border border-transparent hover:border-white hover:font-bold px-2 py-1 rounded"
         />
