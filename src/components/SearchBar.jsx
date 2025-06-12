@@ -21,11 +21,11 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="flex w-full h-10 sm:h-12 border border-gray-300 rounded-md overflow-hidden">
-      <select className="bg-gray-200 text-black text-xs sm:text-sm px-2 py-1 border-r border-gray-300">
-        {categories.map((category, index) => (
-          <option key={index}>{category}</option>
-        ))}
-      </select>
+  <select className="bg-gray-200 text-black text-[10px] sm:text-sm px-1 sm:px-2 py-1 border-r border-gray-300 w-24 sm:w-auto">
+    {categories.map((category, index) => (
+      <option key={index}>{category}</option>
+    ))}
+  </select>
 
       <input
         type="text"

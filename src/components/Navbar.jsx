@@ -45,9 +45,10 @@ const AmazonNavbar = ({ deliveryLocation = "India" }) => {
       </div>
 
       {/* Search Bar */}
-      <div className="flex flex-1 mx-4 max-w-2xl w-full order-3 sm:order-none mt-2 sm:mt-0 bg-amber-50">
-        <SearchBar onSearch={handleSearch} />
-      </div>
+      <div className="flex w-full sm:flex-1 sm:mx-4 sm:max-w-2xl order-3 sm:order-none mt-2 sm:mt-0 bg-amber-50 ">
+  <SearchBar onSearch={handleSearch} />
+</div>
+
 
       {/* Right Section */}
       <div className="flex items-center space-x-6 text-sm">
