@@ -1,7 +1,7 @@
 import { MdArrowDropDown } from "react-icons/md";
 import SearchBar from "./SearchBar.jsx";
 import { FaShoppingCart } from "react-icons/fa";
-import { useEffect, useRef, useState } from "react";
+import {  useState } from "react";
 import User from "./User.jsx";
 
 
@@ -18,24 +18,10 @@ const data =[
                 ]
 const AmazonNavbar = ({ deliveryLocation = "India" }) => {
   const [open, setOpen] = useState(false);
-
-  const dropdownRef = useRef(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+ 
   const handleSearch = (query) => {
     console.log("Searching for:", query);
-    // Add API call or filtering logic here
+  
   };
 
   return (

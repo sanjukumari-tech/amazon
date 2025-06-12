@@ -1,7 +1,3 @@
-// import React from "react";
-// import Navbar from "./components/Navbar";
-// import Carousel from "./components/Carousel";
-// import Product from "./components/Product";
 
 import Carousel from "../components/Carousel";
 import AmazonNavbar from "../components/Navbar";
