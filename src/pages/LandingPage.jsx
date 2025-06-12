@@ -24,7 +24,7 @@ const LandingPage = () => {
     <Carousel images={images} />
   </div>
 
-  <div className="-mt-35 sm:-mt-16 md:-mt-20 relative z-10 px-2 sm:px-4 md:px-6">
+  <div className="lg:-mt-55 sm:-mt-36 md:-mt-50  relative z-10 px-2 sm:px-4 md:px-6">
     <Product />
   </div>
 </div>
