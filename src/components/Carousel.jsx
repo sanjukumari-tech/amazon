@@ -19,10 +19,10 @@ const Carousel = ({ images }) => {
   }, [current]);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative overflow-hidden  w-screen pt-25 min-h-[300px] sm:min-h-[400px] md:min-h-[500px]  ">
       <div
         ref={containerRef}
-        className="flex transition-transform duration-1000 ease-in-out overflow-x-scroll scroll-smooth scrollbar-hide"
+        className="flex -mt-6 transition-transform duration-1000 ease-in-out overflow-x-scroll scroll-smooth scrollbar-hide"
       >
         {images.map((img, index) => (
           <img

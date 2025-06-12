@@ -43,11 +43,15 @@ const AmazonNavbar = ({ deliveryLocation = "India" }) => {
       {/* Left Section */}
       <div className="flex items-center ">
         <img
-          src="./logo-amazon.png"
+          src="../src/assets/logo-amazon.png"
           alt="Amazon"
           className="h-15 w-auto border border-transparent hover:border-white hover:font-bold px-2 py-1 rounded"
         />
-        {/* </div> */}
+       
+      </div>
+
+       <div className="flex items-center ">
+       
         <div className="text-sm hidden sm:flex flex-col leading-tight border border-transparent hover:border-white hover:font-bold px-2 py-1 rounded">
           <span className="text-gray-300">Deliver to</span>
           <span className="font-bold">{deliveryLocation}</span>

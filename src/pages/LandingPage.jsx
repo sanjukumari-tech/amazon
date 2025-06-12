@@ -15,18 +15,20 @@ const images = [
 ];
 const LandingPage = () => {
   return (
-    <div >
-      <div className="fixed top-0 left-0 w-full z-50">
-        <AmazonNavbar />
-      </div>
-      <div  className="relative w-screen pt-16 ">
-        <Carousel images={images} />
-      </div>
-      <div className="-mt-65 relative z-10 px-4">
-        <Product />
-      </div>
-    </div>
-  );
+    <div>
+  <div className="fixed top- left-0 w-full z-50 ">
+    <AmazonNavbar />
+  </div>
+
+  <div className="pt-[0px] ">
+    <Carousel images={images} />
+  </div>
+
+  <div className="-mt-35 sm:-mt-16 md:-mt-20 relative z-10 px-2 sm:px-4 md:px-6">
+    <Product />
+  </div>
+</div>
+  )
 };
 
 export default LandingPage;
